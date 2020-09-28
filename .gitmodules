@@ -1,0 +1,32 @@
+[submodule "terraform/modules/network"]
+	path = terraform/modules/network
+	url = git@github.com:FoghornConsulting/m-gcp-network.git
+	branch = master
+[submodule "terraform/modules/folders"]
+	path = terraform/modules/folders
+	url = git@github.com:FoghornConsulting/m-gcp-folders.git
+	branch = master
+[submodule "terraform/modules/iam"]
+	path = terraform/modules/iam
+	url = git@github.com:FoghornConsulting/m-gcp-iam.git
+	branch = master
+[submodule "terraform/modules/project"]
+	path = terraform/modules/project
+	url = git@github.com:FoghornConsulting/m-gcp-project.git
+	branch = master
+[submodule "terraform/modules/ha-vpn"]
+	path = terraform/modules/ha-vpn
+	url = git@github.com:FoghornConsulting/m-gcp-ha-vpn.git
+	branch = master
+[submodule "terraform/modules/interconnect"]
+	path = terraform/modules/interconnect
+	url = git@github.com:FoghornConsulting/m-gcp-interconnect.git
+	branch = master
+[submodule "terraform/modules/log-export"]
+	path = terraform/modules/log-export
+	url = git@github.com:FoghornConsulting/m-gcp-log-export.git
+	branch = master
+[submodule "terraform/modules/org-policy"]
+	path = terraform/modules/org-policy
+	url = git@github.com:FoghornConsulting/m-gcp-org-policy.git
+	branch = master

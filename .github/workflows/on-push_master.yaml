@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  Notify_Slack:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v1.0.0
+        env:
+          SLACK_CHANNEL: C1LRUE7N0 # testing
+          SLACK_COLOR: "good"
+          SLACK_MESSAGE: "Push to master https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }} by `${{ github.actor }}` :rocket:"
+          SLACK_TITLE: on push to mainline
+          SLACK_USERNAME: actions
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
